@@ -6,6 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
 import pickle
+import gzip
 
 """
 Extract features from the audio file using MFCC.
@@ -75,5 +76,5 @@ print(f"Actual labels: {y}")
 """
 Save the trained model to a pickle file.
 """
-with open("model.pkl", "wb") as f:
+with gzip.open('model.pkl.gz', 'wb') as f:
     pickle.dump(model, f)
