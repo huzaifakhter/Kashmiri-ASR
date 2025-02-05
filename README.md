@@ -2,7 +2,7 @@
 
 This is a streamlined machine learning model, trained to recognize Kashmiri numbers (1 to 10) from audio clips. The model was trained using a dataset of 3,500 augmented audio samples derived from 70 male human-spoken words.
 
-## Key features of this model:
+# Key features of this model:
 
     Algorithm: RandomForestClassifier—an ensemble learning method renowned for its robustness and accuracy.
     Audio Features: The model extracts 25 MFCCs,
