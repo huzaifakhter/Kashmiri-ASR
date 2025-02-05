@@ -20,7 +20,7 @@ def extract_features(file_path):
 """
 Load the trained model, model.pkl
 """
-with open("model.pkl", "rb") as f:
+with gzip.open('model.pkl.gz', 'rb') as f:
     model = pickle.load(f)
 
 """
